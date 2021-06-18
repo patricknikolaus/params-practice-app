@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get "/phrase", controller: "phrases", action: "query"
+  get "/phrase/:url_phrase", controller: "phrases", action: "url_segment"
 end
